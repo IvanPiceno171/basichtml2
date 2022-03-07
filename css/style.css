@@ -1,0 +1,38 @@
+
+.jumbotron{
+    height: 80vh;
+    background-image: url(/img/grilsbbq.jpg);
+    opacity: 0.9;
+}
+
+
+.title{
+    text-align: center;
+    margin-top: 30vh;
+    font-size: 100px;
+    font-weight: 800;
+letter-spacing: .4em;
+color: rgb(4, 0, 226);
+border: 13px dashed rgb(255, 255, 255);
+}
+.card-img-top{
+    height: 40vh;
+border-radius: 50%;
+}
+.inline{
+    display: flex;
+    justify-content: space-between;
+margin-top: 55px;
+}
+.centerrecipe
+{
+    display: flex;
+justify-content: center;
+}
+
+.jumbotron-fluid1{
+height: 40vh;
+border: 3px solid black;
+
+}
+

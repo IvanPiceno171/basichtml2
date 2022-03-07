@@ -4,34 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>recipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+<!-- Jumbo tron -->
+    <div class="jumbotron jumbotron-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="collapse navbar-collapse" id="navbarText">
+            
+              
+            </div>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </nav>
+          
+        <div class="container">
+          <h1 class="display-4 title">Enjoy!</h1>
+          
+        </div>
+      </div>
     
-<h1>This is your first HTML page!</h1>
-<h3>seems like things are going pretty well so far</h3>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, modi.</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, consequuntur!</p>
+      
+      <h1 class="centerrecipe">Top recipes</h1>
+      
+      <!-- Cards -->
+      <div class="inline">
+    <div class="card" style="width: 25rem;">
+        <img class="card-img-top" src="img/roasted-tri-tip-16.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    
+    <div class="card" style="width: 25rem;">
+        <img class="card-img-top" src="img/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2018__08__Sous-Vide-Pork-Belly-Bites-3-6eb47ec1868f4312877daf9e8caeed9b.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
 
-<img src="data:image/jpeg;base64,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" alt="#">
-<p>Here is what the recipe calls for</p>
+      
+      <div class="card" style="width: 25rem;">
+        <img class="card-img-top" src="img/dad-grills-mc-main-210531.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+<!-- videos -->
+<div class="jumbotron1 jumbotron-fluid1">
+<div class="vid">
+  <iframe width="100%" height="415" src="https://www.youtube.com/embed/sHqJOwXVopg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-<P>Ingredients</P>
-<ul>
-    <li>6 eggs</li>
-    <li>2 cups of flour</li>
-    <li>2 tablespoons of vanilla extract</li>
-    <li>2 teaspoons of baking powder</li>
-    <li>1 cup of sugar</li>
-</ul>
-<p>Instructions</p>
-<ol>
-    <li>add eggs,flout and vanilla extract and mix</li>
-    <li>combine wth sugar and baking powder and stir</li>
-    <li>eat half the cookie batter because its delicious</li>
-    <li>Make the rest of the batter</li>
-    <li>bake at 250 for 25 min</li>
-    <li>Enjoy!</li>
-</ol>
+
+<!-- footer -->
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+
 </body>
 </html>
